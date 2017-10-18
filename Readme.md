@@ -11,20 +11,16 @@ This is a simulator of a “toy robot”. You will be writing code to place and 
 
 Create an application that can read in commands of the following form:
 • PLACE X,Y,F
-PLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST. The origin (0,0) can be considered to be the SOUTH WEST most corner.
-The first valid command to the robot is a PLACE command, after that, any sequence of commands may be issued, in any order, including another PLACE command. The application should discard all commands in the sequence until a valid PLACE command has been executed.
-Place function will create New Session. If current session is already active, it will be finished.
+PLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST. The origin (0,0) can be considered to be the SOUTH WEST most corner. The first valid command to the robot is a PLACE command, after that, any sequence of commands may be issued, in any order, including another PLACE command. The application should discard all commands in the sequence until a valid PLACE command has been executed. Place function will create New Session. If current session is already active, it will be finished.
 
 • MOVE
 MOVE will move the toy robot one unit forward in the direction it is currently facing.
 
 • LEFT & RIGHT
-LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without
-changing the position of the robot.
+LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.
 
 • SAVE
-Save robot movement log in json format to this url https://test.interaktiv.sg/
-robot-test/. The json for the log should look like this:
+Save robot movement log in json format to this url https://test.interaktiv.sg/robot-test/. The json for the log should look like this:
 [{
 “action”: “PLACE”, // the action created from the robot.
 “value”: “1,2,NORTH”, // current position of the robot.
@@ -48,8 +44,7 @@ please contact us eko@interaktiv.sg or chuan@interaktiv.sg.
 Process
 • Create or use your free Github account for this code
 • Commit your code based on what you think it’s the best practice
-• Spend a maximum of 12 hours, we will calculate from first time commit to latest
-commit.
+• Spend a maximum of 12 hours, we will calculate from first time commit to latest commit.
 
 Deliverables
 Give us the GITHUB project url, so we can review your progress based on what you’ve committed and we will review your code.
