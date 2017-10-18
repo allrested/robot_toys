@@ -1,0 +1,35 @@
+{
+  "name": "robot-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive",
+    "test:watch": "nodemon --exec \"npm test\"",
+    "start": "babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allrested/robot_toys.git"
+  },
+  "keywords": [],
+  "author": "allrested@gmail.com",
+  "bugs": {
+    "url": "https://github.com/allrested/robot_toys/issues"
+  },
+  "homepage": "https://github.com/allrested/robot_toys",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "expect": "^1.20.2",
+    "mocha": "^3.3.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "redux": "^3.6.0"
+  }
+}
